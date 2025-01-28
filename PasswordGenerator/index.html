@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Password Generator">
+    <title>Password Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <img class="lockerIcon" src="./assets/lockerIcon.png" />
+
+    <main class="container-input">
+        <span>Size: <span id="value"></span> characters</span>
+        <input id="slider" class="slider" type="range" min="5" max="25" value="15"/>
+        <button id="sizeButton" class="button-cta" onclick="generatePassword()">Generate Password</button>
+        
+        
+    </main>
+
+    <div id="container-password" onclick="copyPassword()" class="container-password hide">
+        <span class="title">Generated Password</span>
+        <span id="password" class="password"></span>
+        <span class="tooltip">Copy Password 📄</span>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
