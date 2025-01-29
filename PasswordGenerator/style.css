@@ -1,3 +1,4 @@
+/*General*/
 *{
     font-family: sans-serif;
     width: 100%;
@@ -5,6 +6,7 @@
     box-sizing: border-box;
 }
 
+/*Main Page*/
 body{
     background-color: #2e2e2e;
     width: 100%;
@@ -14,12 +16,13 @@ body{
     align-items: center;
     flex-direction: column;
 }
-
+/*Icon*/
 .lockerIcon{
     max-width: 200px;
     margin-bottom: 24px;
 }
 
+/**/
 .container-input{
     max-width: 480px;
     margin: 14px 0;
@@ -30,6 +33,7 @@ body{
     font-size: 22px;
 }
 
+/*Slider*/
 .slider{
     appearance: none;
     width: 100%;
@@ -40,6 +44,7 @@ body{
     margin-top: 8px;
 }
 
+/*Generate Password button*/
 .button-cta{
     height: 40px;
     background-color: green;
@@ -52,6 +57,7 @@ body{
     font: 18px;
 }
 
+/*Password container*/
 .container-password{
     max-width: 480px;
     margin: 14px, 0;
@@ -61,6 +67,7 @@ body{
     cursor: pointer
 }
 
+/*Result Password text*/
 .title{
     text-align: center;
     color: white;
@@ -69,6 +76,7 @@ body{
     margin-bottom: 8px;
 }
 
+/*Password text*/
 .password{
     height: 60px;
     background-color: rgba(0, 0, 0, 0.40);
@@ -85,6 +93,7 @@ body{
     transform: scale(1.05)
 }
 
+/*Tooltip Default*/
 .tooltip{
     color: white;
     position: relative;
@@ -99,10 +108,17 @@ body{
     transition: all 0.5s ease-in-out;
 }
 
+/*Tooltip Green Button*/
+.tooltip.success{
+    background: green;
+}
+
+/*Hide Password container*/
 .hide{
     display: none;
 }
 
+/*Show tooltip*/
 .container-password:hover .tooltip{
     visibility: visible;
     bottom: 50px;

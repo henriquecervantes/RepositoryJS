@@ -1,36 +1,62 @@
-let sliderElemente = document.querySelector("#slider")
-let buttonElemente = document.querySelector("#sizeButton")
+
+let sliderElement = document.querySelector("#slider")
+let buttonElement = document.querySelector("#sizeButton")
 
 let sizePassword = document.querySelector("#value");
 let password = document.querySelector("#password");
 
 let containerPassword = document.querySelector("#container-password");
-
 let charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@";
 let newPassword = "";
 
-sizePassword.innerHTML = sliderElemente.value;
+let copyNewPassword = document.querySelector("#tooltip");
 
-sliderElemente.oninput = function(){
+//Define password lengh
+sizePassword.innerHTML = sliderElement.value;
+sliderElement.oninput = function(){
     sizePassword.innerHTML = this.value;
 }
 
+<!--
 function generatePassword(){
-    
-    let pass = "";
 
-    for (let i = 0, n = charset.length; i < sliderElemente.value; ++i){
+    resetTooltip()
+    //Change tooltip color to default
+    copyNewPassword.classList.toggle("success", false)
+
+    //Generate random char
+    let pass = "";
+    for (let i = 0, n = charset.length; i < sliderElement.value; ++i){
         pass += charset.charAt(Math.floor(Math.random()*n))
         
     }
 
-    containerPassword.classList.remove("hide");
     password.innerHTML = pass;
     newPassword = pass;
 
+    //Show password
+    containerPassword.classList.remove("hide");
+    
+
 }
 
+//Reset tooltip text to default
+function resetTooltip(){
+
+    let copy = "Copy Password📄"
+    tooltip.innerHTML = copy
+
+}
+
+//Tooltip changes
 function copyPassword(){
-    alert ("Copied!");
+    
+    //Change text
+    copy = "Copied ✅"
+    tooltip.innerHTML = copy
     navigator.clipboard.writeText(newPassword);
+
+    //Change tooltip Color
+    copyNewPassword.classList.toggle("success", true)
+
 }
