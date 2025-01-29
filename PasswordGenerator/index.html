@@ -4,28 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Password Generator">
+    
+    <!--Website Title-->
     <title>Password Generator</title>
 
+    <!--CSS call-->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!--locker image-->
     <img class="lockerIcon" src="./assets/lockerIcon.png" />
 
+   
     <main class="container-input">
+        <!--Char Lenght Text-->
         <span>Size: <span id="value"></span> characters</span>
+
+        <!--Slider-->
         <input id="slider" class="slider" type="range" min="5" max="25" value="15"/>
+        
+        <!--Password generate button-->
         <button id="sizeButton" class="button-cta" onclick="generatePassword()">Generate Password</button>
         
         
     </main>
-
+    <!--Password Text Box-->
     <div id="container-password" onclick="copyPassword()" class="container-password hide">
+
+        <!--Generated Password Text-->
         <span class="title">Generated Password</span>
+
+        <!--Generated Password -->
         <span id="password" class="password"></span>
-        <span class="tooltip">Copy Password 📄</span>
+
+        <!--Copy Instrction Box -->
+        <span id="tooltip" class="tooltip"></span>
+       
     </div>
 
+    <!-- JavaScript Call-->
     <script src="script.js"></script>
     
 </body>
