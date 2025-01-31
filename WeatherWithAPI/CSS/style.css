@@ -6,7 +6,7 @@
 }
 
 body{
-    background: linear-gradient(180deg, #030b20, #546bab 100%);
+    background-image: url("https://wallpapers.com/images/hd/weather-scenarios-collage-dbk9c5n23l7e5fgb.jpg");
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,11 +18,13 @@ body{
 }
 
 .container{
-    background-color: #131862;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: rgba(5, 1, 26, 0.9);
+    box-shadow: rgba(0, 0, 0, 0.527) 0px 3px 8px;
     padding: 2rem;
     color: white;
     border-radius: 1rem;
+    border-style: solid;
+    border-color: white;
 }
 
 .form h3{
