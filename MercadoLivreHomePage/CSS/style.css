@@ -1,0 +1,194 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(226, 226, 226);
+    font-size: 15px;
+}
+
+.container-top{
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    height: 100px;
+    
+    
+}
+
+.search-container{
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+
+.logo{
+    margin-right: 70px;
+}
+
+#searchButton{
+    width: 40px;
+    height: 40px;
+    border-left: 1px solid grey;
+    border-color: grey;
+    cursor: pointer;
+    border-left: grey;
+    border-top: white;
+    border-right: white;
+    border-bottom: white;
+
+}
+
+
+#search-input{
+    
+    width: 550px;
+    height: 40px;
+    border-radius: 2px;
+    border: none;
+
+}
+
+.meli{
+    margin-left: 50px;
+}
+
+.sub-header{
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.top-button{
+    background: yellow;
+    border: none;
+    padding: 7px;
+    cursor: pointer;
+}
+
+#createAccountButton{
+    margin-left: 100px;
+}
+
+#cepButton{
+    margin-right: 80px;
+}
+
+.banner{
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+
+.left-banner-button{
+    background: rgb(255, 255, 255); 
+    padding: 20px;
+    border-radius: 40px;
+    border-color: grey;
+    position: absolute;
+    left: 1px;
+    cursor: pointer;
+    border-style:solid;
+    border-width: 1px;
+}
+.banner img{
+    width: 100%; /* Faz a imagem ocupar toda a div */
+    height: 100%;
+    object-fit: cover; /* Ajusta a imagem sem distorcer */
+    
+    
+}
+
+.right-banner-button{
+
+    background: rgb(255, 255, 255); 
+    padding: 20px;
+    border-radius: 40px;
+    border-color: rgb(120, 120, 120, 0.4); 
+    position: absolute;
+    right: 1px;
+    cursor: pointer;
+    border-style:solid;
+    border-width: 1px;
+    
+}
+
+.category-text{
+    background-color: white;
+    margin-top: 20px;
+    height: 60px;
+    width: 1200px;
+    font-size: 22px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    text-indent: 28px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    font-weight: bold;
+}
+
+.category{
+
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 1200px;
+    flex-flow: wrap;
+    flex-direction: column;
+    gap: 1px;
+    border-bottom-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.categoryBox{
+    background-color: rgb(255, 255, 255);
+    height: 100px;
+    width: 280px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    justify-content: space-evenly;
+    border-color: rgb(120, 120, 120, 0.2); 
+    flex-direction: row;
+    text-align: left;
+    text-size-adjust: 80%;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border-style:solid;
+    border-width: 1px;
+}
+
+.categoryBox img{
+
+    width: 40%;
+    height: 50%;   
+    background-color: rgb(255, 255, 255, 0.1);
+    align-items: left;
+    justify-content: center;
+
+}
+
+.footer{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+    border-top: 1px solid grey;
+    margin-top: 20px;
+
+}
+
+.category-img{
+    background:rgb(red, green, blue)
+}
