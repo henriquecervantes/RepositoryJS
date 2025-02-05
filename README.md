@@ -18,3 +18,9 @@ Link do canal: [Matheus Battisti - Hora de Codar](https://www.youtube.com/@Mathe
 <br/>
 Link do vídeo do projeto base: [Aplicação de Clima com OpenWeather API - Projeto de JavaScript com API](https://www.youtube.com/watch?v=VS8EBgPwsSU).
 
+<h2 align="left" font-size: 20> ⛅ Pagina Inicial do Mercado Livre</h2>
+
+Este projeto tem como único objetivo explorar os conhecimentos gerados através de projetos anteriores replicando a página inicial do Mercado Livre. Foram utilizados somente as tecnologias HTML e CSS para se obter este resultado.
+
+Link do site oficial: [Mercado Livre](https://www.mercadolivre.com.br/).
+<br/><br/>
