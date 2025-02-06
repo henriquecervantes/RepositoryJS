@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>LifeManager</title>
+</head>
+<body>
+    <div class="general-container">
+        <aside class="side-bar">
+            <div class="side-bar-container border">
+                <div class="tab-button">
+                    <button class="side-bar-button" content-id="homepage-tab">
+                        HOME PAGE
+                    </button>
+                </div>
+
+                <div class="tab-button">
+                    <button class="side-bar-button" content-id="to-do-list-tab">
+                        TO DO LIST
+                    </button>
+                </div>
+
+                <div class="tab-button">
+                    <button class="side-bar-button" content-id="weather-tab">
+                        WEATHER
+                    </button>
+                </div>
+
+                <div class="tab-button">
+                    <button class="side-bar-button" content-id="edit-profile-tab">
+                        EDIT PROFILE
+                    </button>
+                </div>
+            </div>
+        </aside>
+
+        
+
+        <div class="header border">
+
+            <p class="life-manager-title border">LIFEMANAGER</p>
+        </div>
+
+        <div class="tab-content">
+            <div class="content" id="homepage-tab">
+                <p class="title border" id="welcome=text">Welcome!</p>
+                <div class="main border">
+                    
+                    <div class="main-container border">
+                        weather
+                    </div>
+                    <div class="main-container border">
+                        News
+                    </div>
+                    <div class="main-container border" >
+                        Reminder
+                    </div>
+                    <div class="main-container border">
+                        Next Task
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content">
+                <div class="content" id="to-do-list-tab">
+                    <p class="title border" id="to-do-list-text">To Do List</p>
+                    <div class="to-do-list-label">
+                        <label for="task-description-text">New Task:</label>
+                        <input type="text" id="task-description-input" name="fname"><br><br>
+
+                        <label for="task-priority-text">Deadline:</label>
+                        <input type="text" id="task-deadline-input" name="fname"><br><br>
+
+                        <button class="add-task-button"> Add </button>
+                    </div>
+                    <div class="to-do-list border">
+                        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+
+        <div class="tab-content">
+            <div class="content" id="weather-tab">
+                <p class="title border" id="weather-text">Weather</p>
+                <div class="weather border">
+                    
+                </div>
+            </div>
+        </div>
+        
+            
+        <div class="tab-content">
+            <div class="content" id="edit-profile-tab">
+                <p class="title border" id="edit-profile-text">Edit Profile</p>
+                <div class="edit-profile border">
+                    
+                </div>
+            </div>
+        </div>
+
+        </div>
+        <div class="to-do-list-bar border">
+            <p class="to-do-list-bar-title border"> Next tasks</p>
+            <div class="tasks-container border" id="task-one-container">Task 1</div>
+            <div class="tasks-container border" id="task-two-container">Task 2</div>
+            <div class="tasks-container border" id="task-three-container">Task 3</div>
+            <div class="tasks-container border" id="task-four-container">Task 4</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
