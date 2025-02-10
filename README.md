@@ -18,3 +18,6 @@ Link do canal: [Matheus Battisti - Hora de Codar](https://www.youtube.com/@Mathe
 <br/>
 Link do vídeo do projeto base: [Aplicação de Clima com OpenWeather API - Projeto de JavaScript com API](https://www.youtube.com/watch?v=VS8EBgPwsSU).
 
+<h2 align="left" font-size: 20> ⌚ LifeManager</h2>
+
+Esta aplicação tem a função de compilar os projetos e estudos realizados. Ela contará com funcionalidades como lista de tarefas, exibição do clima de acordo com a região selecionada, personalização de perfil e recursos visuais elaborados para tornar o ambiente mais amigável e intuitivo. As tecnologias utilizadas são HTML, CSS, JavaScript e API.
