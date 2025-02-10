@@ -38,49 +38,56 @@
 
         
 
-        <div class="header border">
+        <div class="header">
 
-            <p class="life-manager-title border">LIFEMANAGER</p>
+            <p class="life-manager-title">LIFEMANAGER</p>
         </div>
 
         <div class="tab-content">
-            <div class="content" id="homepage-tab">
-                <p class="title border" id="welcome=text">Welcome!</p>
-                <div class="main border">
+            <div class="content show" id="homepage-tab">
+                <p class="title" id="welcome=text">Welcome!</p>
+                <div class="main">
                     
-                    <div class="main-container border">
+                    <div class="main-container">
                         weather
                     </div>
-                    <div class="main-container border">
+                    <div class="main-container">
                         News
                     </div>
-                    <div class="main-container border" >
+                    <div class="main-container" >
                         Reminder
                     </div>
-                    <div class="main-container border">
-                        Next Task
+
+                    <div class="to-do-list-bar">
+                        <p class="to-do-list-bar-title"> Next tasks</p>
+                        
                     </div>
                 </div>
             </div>
 
             <div class="tab-content">
                 <div class="content" id="to-do-list-tab">
-                    <p class="title border" id="to-do-list-text">To Do List</p>
-                    <div class="to-do-list-label">
-                        <label for="task-description-text">New Task:</label>
-                        <input type="text" id="task-description-input" name="fname"><br><br>
+                    <form class = "tasks-form">
+                        <p class="title border" id="to-do-list-text">To Do List</p>
+                        <div class="to-do-list-label">
+                            <label class="task-description-text">New Task:</label>
+                            <input type="text" id="task-description-input" name="fname"><br><br>
 
-                        <label for="task-priority-text">Deadline:</label>
-                        <input type="text" id="task-deadline-input" name="fname"><br><br>
+                            <label class="task-priority-text">Priority (1 to 10):</label>
+                            <input type="text" id="task-priority-input" name="fname"><br><br>
 
-                        <button class="add-task-button"> Add </button>
-                    </div>
-                    <div class="to-do-list border">
-                        
-                    </div>
+                            <button class="submit-task-button"> Submit </button>
+                        </div>
+                        <div class="tasksTitle">
+                            <h1>TASK</h1>
+                            <h2>PRIORITY</h2>
+                        </div>
+                        </div>
+
+                        </div>
+                    </form>
                 </div>
             </div>
-
         </div>
         
 
@@ -104,13 +111,7 @@
         </div>
 
         </div>
-        <div class="to-do-list-bar border">
-            <p class="to-do-list-bar-title border"> Next tasks</p>
-            <div class="tasks-container border" id="task-one-container">Task 1</div>
-            <div class="tasks-container border" id="task-two-container">Task 2</div>
-            <div class="tasks-container border" id="task-three-container">Task 3</div>
-            <div class="tasks-container border" id="task-four-container">Task 4</div>
-        </div>
+        
     </div>
     <script src="script.js"></script>
 </body>

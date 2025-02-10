@@ -2,7 +2,7 @@
     font-family: Arial, Helvetica, sans-serif;
     padding: 0;
     margin: 0;
-    background-color: rgb(10, 5, 5);
+    background-color: rgb(5, 5, 10);
 
 }
 
@@ -18,8 +18,11 @@
     align-items: center;
     flex-direction: column;
     width: 100%;
-    background-color: rgb(15, 7, 7)
+    background-color: rgb(10, 7, 15);
+   
+    
 }
+
 
 .side-bar{
     position: fixed;
@@ -27,13 +30,13 @@
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    background-color: rgb(15, 7, 7);
+    background-color: rgb(10, 7, 15);
     height: 100%;
     padding-top: 100px;
     padding-bottom: 100px;
     width: 250px;
     border-right:1px solid grey;
-
+    
 }
 
 .side-bar-button{
@@ -42,7 +45,7 @@
     padding-right: 30px;
     padding-bottom: 30px;
     padding-left: 30px;
-    background: rgb(15, 7, 7);
+    background: rgb(10, 7, 15);
     border: none;
     font-size: 20px;
     cursor: pointer;
@@ -54,7 +57,7 @@
     justify-content: flex-start;
     align-items: center;
     height: 80px;
-    background-color: rgb(24, 4, 4);
+    background-color: rgb(10, 7, 15);
     margin-left: 250px;
 }
 
@@ -73,7 +76,7 @@
     font-weight: bold;
     font-size: 50px;
     margin-left: 600px;
-    background-color: rgb(24, 4, 4);
+    background-color: rgb(4, 4, 24,0);
 }
 
 .content{
@@ -92,8 +95,9 @@
     align-items: center;
     height: 600px;
     justify-content: space-evenly;
-    border: 1px solid grey;
     border-radius: 4px;
+    flex-direction: column;
+    width: 1200px;
 }
     
 .title{
@@ -107,8 +111,8 @@
 .main-container{
     display: flex;
     padding: 30px 30px;
-    height: 200px;
-    width: 200px;
+    height: 100px;
+    width: 900px;
     border: 1px solid grey;
     border-radius: 4px;
 }
@@ -141,13 +145,73 @@
     
 }
 
-.add-task-button{
+.task{
+    
+    border: 1px solid grey;
+    margin-top: 20px;
+    display: flex;
+    justify-content: left;
+    margin-left: 300px;
+    height: 100px;
+    align-items: center;
+    gap: 20px;
+    border-radius: 4px;
+    margin-right: 350px;
+    gap: 20px;
+}
+
+.task button{
+
+    color:white;
+    gap: 10px;
+    position: relative;
+    height: 40px;
+    width: 80px;
+    border: 1px solid grey;
+    border-radius: 4px;
+
+}
+
+.tasksTitle{
+    margin-left: 300px;
+    display: flex;
+    align-items: center;
+    border: 1px solid grey;
+    margin-top: 20px;
+    margin-right: 350px;
+    height: 50px;
+    border-radius: 4px;
+}
+
+.tasksTitle h1{
+    margin-left: 120px;
+    font-size: 20px;
+}
+
+.tasksTitle h2{
+    margin-left: 785px;
+    font-size: 20px;
+}
+
+.task h3{
+    margin-left: 20px;
+    position: absolute;
+      
+}
+
+.task h4{
+    margin-left: 1000px;
+    margin-right: 40px;  
+}
+
+.submit-task-button{
     width: 80px;
     height: 30px;
     margin-top: 22px;
     margin-left: 10px;
     color: white;
     border-color: white;
+
 }
 
 .to-do-list-bar{
@@ -166,18 +230,55 @@
     border-radius: 4px;
 }
 
+.right-bar-priority-task{
+    display: flex;
+    width: 300px;
+    height: 200px;
+    border: 1px solid grey;
+    border-radius: 4px;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.right-bar-priority-task h4{
+
+    display: flex;
+    margin-top: 10px;
+    border-bottom: 1px solid grey;
+    
+}
+
+.right-bar-priority-task h3{
+
+    margin-top: 20px;
+    
+}
+
+
+
+
+
+.task-form{
+    display: flex;
+    align-items: center;
+    margin-left: 1800px;
+    position: fixed;
+    top:0;
+    margin-top: 100px;
+    flex-direction: column;
+    height: 700px;
+    width: 300px;
+    padding: 10px 10px 10px 10px;
+    gap: 10px;
+    border: 1px solid grey;
+    border-radius: 4px;
+}
+
 .to-do-list-bar-title{
     display: flex;
     padding: 20px 20px 20px 20px;
     font-weight: bold;
     font-size: 30px;
     color: white;
-}
-
-.tasks-container{
-    display: flex;
-    width: 300px;
-    height: 200px;
-    border: 1px solid grey;
-    border-radius: 4px;
 }
